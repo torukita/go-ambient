@@ -76,7 +76,7 @@ func SendBulkData(c *Client, ds []*Data) error {
 	if err != nil {
 		return err
 	}
-	fmt.Println(string(b))
+	// fmt.Println(string(b))
 	if err := c.CreateData(context.Background(), b); err != nil {
 		return err
 	}
